@@ -1,0 +1,6 @@
+
+CREATE TABLE "training___zs".sales (
+id integer,
+sales_date date not null,
+sales_amount numeric(38,2) constraint  sales_over_1k check (sales_amount >1000),
+sales_qty numeric(10,2));
