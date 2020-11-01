@@ -31,7 +31,7 @@ primary key (id)
 );
 
 --7
---(te kulcze cos nie dzialaly)
+
 alter table sales ADD constraint fk_test FOREIGN key (product_id) REFERENCES products (id);
 
 -- alter table sales add foreign key (id) references products (id);    tak tez probowalem
